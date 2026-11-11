@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff9ed">
+    <meta name="description" content="Gör, eşleştir, hatırla! Çocuklar için görsel hafızaya dayalı A1 İngilizce kelime oyunları.">
+    <title>Kelime Bahçem — İngilizceyi gör, oyna, hatırla!</title>
+    <link rel="icon" href="./icon.svg" type="image/svg+xml">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Ana menü">
+        <a class="brand" href="#home" data-nav="home" aria-label="Kelime Bahçem ana sayfa">
+          <span class="brand-icon" aria-hidden="true">🌱</span>
+          <span class="brand-name">kelime<br><b>bahçem</b></span>
+        </a>
+        <div class="sidebar-label">BAHÇE</div>
+        <nav class="side-nav">
+          <button class="nav-item active" data-nav="home"><span class="nav-icon">🏡</span> Keşfet</button>
+          <button class="nav-item" data-nav="collection"><span class="nav-icon">📖</span> Kelime albümüm</button>
+        </nav>
+        <div class="sidebar-tip">
+          <span aria-hidden="true">✨</span>
+          <p>Her gün birkaç kelime, kocaman bir macera!</p>
+          <div class="tip-sprout" aria-hidden="true">🌼</div>
+        </div>
+        <div class="sidebar-footer"><span class="online-dot"></span> Küçük adımlar, büyük kelimeler</div>
+      </aside>
+
+      <div class="main-column">
+        <header class="topbar">
+          <a class="mobile-brand" href="#home" data-nav="home"><span>🌱</span> kelime <b>bahçem</b></a>
+          <div class="topbar-spacer"></div>
+          <div class="top-xp" aria-label="Toplam yıldız puanı"><span>⭐</span><b id="top-xp">0</b><span class="xp-label">yıldız</span></div>
+          <div class="avatar" aria-label="Bahçe arkadaşı">🦊</div>
+        </header>
+        <main id="main" tabindex="-1" aria-live="polite"></main>
+      </div>
+    </div>
+    <nav class="mobile-nav" aria-label="Alt menü">
+      <button class="nav-item active" data-nav="home"><span class="nav-icon">🏡</span><span>Keşfet</span></button>
+      <button class="nav-item" data-nav="collection"><span class="nav-icon">📖</span><span>Albümüm</span></button>
+    </nav>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

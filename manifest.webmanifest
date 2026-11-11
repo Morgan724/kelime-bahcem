@@ -1,0 +1,12 @@
+{
+  "name": "Kelime Bahçem — A1 İngilizce",
+  "short_name": "Kelime Bahçem",
+  "description": "Gör, eşleştir, hatırla! Görsel hafızalı İngilizce kelime oyunları.",
+  "lang": "tr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fff9ed",
+  "theme_color": "#fff9ed",
+  "icons": [{ "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}
